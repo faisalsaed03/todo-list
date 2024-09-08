@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-desktop-dark.jpg);
+  background-color: hsl(235, 21%, 11%);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Main section styling */
+.main-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 30px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+/* Title styling */
+.title {
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+
+.todo-container-1 {
+  padding-bottom: 20px;
+
+}
+
+/* Padding for the first todo item */
+.todo-container .todo-container:first-of-type {
+  padding-bottom: 20px;
+  /* Adjust the value as needed */
+}
+
+
+
+
+
+
+/* Container for todo items */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  /* Display items in columns */
+}
+
+
+
+/* Todo item styling */
+.new-todo {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+
+/* Styling for check box */
+.check {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid hsl(237, 14%, 26%);
+}
+
+.check-mark:hover {
+  background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+  transition: all 0.35s;
+}
+
+/* Input styling */
+.new-todo-input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+}
+
+.new-todo-input form {
+  flex-grow: 1;
+}
+
+.new-todo-input input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.new-todo-input input::placeholder {
+  color: hsl(233, 14%, 35%);
+}
+
+/* Hide the submit button */
+.mybtn {
+  display: none;
+}
+
+
+
+
+
+
+.check-mark.checked {
+  background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+}
+
+.new-todo-input.completed {
+  text-decoration: line-through;
+  color: white;
+
+
+
+  
+}
