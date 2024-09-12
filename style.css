@@ -10,20 +10,19 @@ body {
   background-color: hsl(235, 21%, 11%);
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
+  align-items: center;
 }
 
 /* Main section styling */
 .main-section {
-  width: 100%;
+    width: 100%;
   max-width: 700px;
-  margin: 0 30px;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+
+
 }
 
 /* Title styling */
@@ -41,10 +40,20 @@ body {
 
 }
 
-/* Padding for the first todo item */
-.todo-container .todo-container:first-of-type {
-  padding-bottom: 20px;
-  /* Adjust the value as needed */
+.todo-container-1 .new-todo {
+  border-radius: 5px;
+  overflow: hidden; 
+
+}
+
+.second-container {
+  border-radius: 5px;
+  background-color: hsl(235, 24%, 19%); 
+  overflow: hidden; 
+}
+
+.second-container:hover{
+  cursor: pointer;
 }
 
 
@@ -52,24 +61,12 @@ body {
 
 
 
-/* Container for todo items */
-.todo-container {
-  display: flex;
-  flex-direction: column;
-  /* Display items in columns */
-}
-
-
-
-/* Todo item styling */
 .new-todo {
   background-color: hsl(235, 24%, 19%);
   display: flex;
-  height: 70px;
-  width: 100%;
+  padding: 20px 0px;
 }
 
-/* Styling for check box */
 .check {
   width: 70px;
   display: flex;
@@ -82,22 +79,27 @@ body {
   height: 30px;
   border-radius: 50%;
   border: 2px solid hsl(237, 14%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: c;
 }
 
-.check-mark:hover {
-  background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
-  transition: all 0.35s;
+.check:hover{
+  cursor: pointer;
 }
 
-/* Input styling */
+
+
+
+
+
+
 .new-todo-input {
-  flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: hsl(235, 24%, 19%);
+  width: 100%;
   color: white;
-}
+  }
 
 .new-todo-input form {
   flex-grow: 1;
@@ -105,11 +107,14 @@ body {
 
 .new-todo-input input {
   background-color: transparent;
-  width: 100%;
   outline: none;
   border: none;
   color: white;
   font-size: 1rem;
+  width: 100%;
+ 
+
+
 }
 
 .new-todo-input input::placeholder {
@@ -127,7 +132,17 @@ body {
 
 
 .check-mark.checked {
-  background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+  background: url(design/checked.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: line-through;
+  color: white;
+
+  
+
+  
+ 
+
 }
 
 .new-todo-input.completed {
@@ -136,5 +151,71 @@ body {
 
 
 
+
   
 }
+
+
+
+
+.last-container {  
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  color:  hsl(233, 14%, 35%);
+  justify-content: space-between;
+  padding: 25.75px 0px;
+
+
+}
+
+.item-2{
+  display: flex;
+
+
+}
+
+.item-2 p {
+  padding-left: 15px;
+}
+
+.item-1 p {
+  padding-left: 20px;
+}
+
+.item-3 p {
+  padding-right: 20px;
+  word-spacing: 5px;
+
+  
+
+
+}
+
+.item-1:hover{
+  cursor: pointer;
+  color: white;
+
+}
+
+.item-2 p:hover{
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.item-3 p:hover{
+  cursor: pointer;
+  color: white;
+
+}
+
+
+
+.item-2 .active-blue {
+  color: hsl(220, 98%, 61%);
+  font-weight: bold;
+}
+
+
+
